@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Banner</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+    <div class="banner-cx banner-main-cx">
+        <div class="banner-cx printer-cx"></div>
+        <div class="light-container-cx">
+            <div class="light-cx"></div>
+        </div>
+        <div class="banner-cx stratasys-cx"></div>
+        <a href="http://bit.ly/StratasysF123-poradnik">
+            <div class="btn-cx">
+                <p>Testuj drukarkę 3D</p>
+            </div>
+        </a>
+        <div class="back-blue-cx"></div>
+        <p class="text-cx cx-1">Zacznij pracę z przemysłową <br><span class="txt-cx">drukarką 3D</span></p>
+        <p class="text-cx text-2-cx cx-2">Testuj drukarkę przez 2 tygodnie <br><span class="txt-cx">w cenie materiałów</span></p>
+
+    </div>
+
+    <style>
+.banner-cx {
+            width: 750px;
+            height: 100px;
+            position: absolute;
+        }
+        
+        .banner-main-cx {
+            opacity: 0;
+            background-image: url(imgcx/back-cx.png);
+            font-family: 'Titillium Web', sans-serif;
+            -webkit-animation: main-cx 1s ease-in .2s;
+            animation: main-cx 1s ease-in .2s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        .btn-cx p {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            top: -4px;
+            left: -10px;
+            -webkit-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        
+        .btn-cx {
+            border: none;
+            display: block;
+            text-align: center;
+            outline: none;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            color: #fff;
+            font-weight: 700;
+            background-color: #003b5d;
+            padding: 17px 0px;
+            width: 182px;
+            height: 15px;
+            font-size: 13px;
+            -webkit-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        
+        .btn-cx:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 490%;
+            width: 140%;
+            background: #62d2ed;
+            -webkit-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            -ms-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        }
+        
+        .btn-cx:hover:after {
+            -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            -ms-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        }
+        
+        .back-blue-cx {
+            width: 0;
+            height: 0;
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            border-top: 80px solid #61d3ed;
+            top: 13px;
+            left: 470px;
+            position: absolute;
+        }
+        
+        .printer-cx {
+            opacity: 0;
+            background-image: url(imgcx/printer-cx.png);
+            -webkit-animation: show-cx .5s ease-in 1.5s;
+            animation: show-cx .5s ease-in 1.5s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        .light-container-cx {
+            width: 21px;
+            height: 20px;
+            position: absolute;
+            left: 276px;
+            top: 20px;
+            overflow: hidden;
+        }
+        
+        .light-cx {
+            width: 70px;
+            height: 17px;
+            position: relative;
+            right: -10px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background-color: rgba(255, 255, 255, .5);
+            -webkit-animation: light-cx 12s ease-in 3s infinite;
+            animation: light-cx 12s ease-in 3s infinite;
+        }
+        
+        .stratasys-cx {
+            opacity: 0;
+            background-image: url(imgcx/stratasys-cx.png);
+            -webkit-animation: show-cx .5s ease-in;
+            animation: show-cx .5s ease-in 1s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        .text-cx {
+            position: absolute;
+            text-align: center;
+            top: 4px;
+            left: 360px;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .txt-cx {
+            font-size: 20px;
+        }
+        
+        .text-2-cx {
+            left: 350px;
+            top: 4px;
+        }
+        
+        .cx-1 {
+            opacity: 0;
+            -webkit-animation: text1-cx 10s linear 2.2s infinite reverse;
+            animation: text1-cx 10s linear 2.2s infinite reverse;
+            position: absolute;
+        }
+        
+        .cx-2 {
+            opacity: 0;
+            -webkit-animation: text2-cx 10s linear 2.2s infinite;
+            animation: text2-cx 10s linear 2.2s infinite;
+        }
+        
+        @-webkit-keyframes show-cx {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes show-cx {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes light-cx {
+            0% {
+                right: -10px;
+            }
+            3% {
+                right: 65px;
+            }
+            50% {
+                right: 65px;
+            }
+            53% {
+                right: -10px;
+            }
+        }
+        
+        @keyframes light-cx {
+            0% {
+                right: -10px;
+            }
+            3% {
+                right: 65px;
+            }
+            50% {
+                right: 65px;
+            }
+            53% {
+                right: -10px;
+            }
+        }
+        
+        @-webkit-keyframes text1-cx {
+            0% {
+                opacity: 0;
+            }
+            55% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes text1-cx {
+            0% {
+                opacity: 0;
+            }
+            55% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes text2-cx {
+            0% {
+                opacity: 0;
+            }
+            45% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes text2-cx {
+            0% {
+                opacity: 0;
+            }
+            45% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @-webkit-keyframes main-cx {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes main-cx {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
